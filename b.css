@@ -1,0 +1,244 @@
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 20px 30px;             
+    background: linear-gradient(to right, #b86391, #6563b1); 
+    box-sizing: border-box;         
+    transition: background 0.5s ease; /* Add transition effect */
+}
+
+/* Header Hover Effect */
+header:hover {
+    background: linear-gradient(to right, #aff39a, #f39c12); /* Example: Change gradient on hover */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease; /* Add transition effect */
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Initial gradient background */
+}
+
+/* Body Hover Effect */
+body:hover {
+    background: linear-gradient(to right, #fbc2eb, #a6c0fe); /* New gradient background on hover */
+}
+
+/* Heading Styling */
+header h1 {
+    margin: 0;                     
+    color: white;                  
+    font-size: 24px;               
+}
+
+/* Game Controls Section */
+.game-controls {
+    display: flex;
+    gap: 10px;                     
+    align-items: center;           
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;            
+    border: none;                  
+    border-radius: 5px;            
+    color: white;                  
+    cursor: pointer;               
+    font-size: 16px;   
+}            
+
+/* Specific Button Styles */
+#sound {
+    background-color: #4CAF50;  
+}   
+
+#sound:hover {
+    background-color: #45a049;     
+}
+
+#restart {
+    background-color: #FF5722; 
+}    
+
+#restart:hover {
+    background-color: #e64a19;     
+}
+
+#help {
+    background-color: #1a8ae6;
+    font-size: 16px;
+    border-radius: 5px;  
+    color: white;  
+    height: 42px;
+    width: 80px;
+    text-align: center;   
+    padding: 10px 20px;            
+             
+}
+
+#help:hover {
+    background-color: #1976D2;     
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #807ed4, #08c787);
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 4.2%;
+}
+
+.game-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.game-info div span {
+    font-size: 24px; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 10px; /* Optional padding around the wrapper */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); /* Adjust column width */
+    gap: 9px; /* Adds space between rows and columns */
+    padding: 5px;
+    background-color: rgb(183, 183, 187);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3.6%;
+    cursor: pointer;
+}
+.flipCard {
+    width: 100%;
+    height: 100px; /* Adjust height */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    position: relative;
+    gap: 3px;
+}
+
+.flipCard.flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.flipCard.matched {
+    border: 7px dashed #28830c; /* Example: Gold color */
+}
+
+
+.flipCard.hidden {
+    opacity: 0; /* Fade out */
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+    pointer-events: none; /* Prevent interaction with hidden cards */
+}
+
+  
+.flipCard.clicked {
+    border: 2px solid rgb(228, 221, 221); /* Adds a visual cue for the clicked state */
+}
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px; /* Adjust as needed */
+  }
+  
+
+.thefront, .theback {
+    position: absolute;
+    width: 100%;
+    height: 100px; /* Adjust height */
+    backface-visibility: hidden;
+}
+.thefront {
+    background-image: url("https://images.hdqwalls.com/download/code-syntax-dark-minimal-4k-mr-2048x2048.jpg");
+    background-size: cover;
+}
+.theback {
+    background-image: url("https://tl.vhv.rs/dpng/s/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+#box1{
+    background-image: url("https://tl.vhv.rs/dpng/s/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png");
+}
+#box2{
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png?f=webp&w=256");
+}
+#box3{
+    background-image: url("https://global.discourse-cdn.com/business5/uploads/kotlinlang/original/2X/f/f440c5115af253e7b8dfdd241a45ccb8e494e8a6.png");
+}
+
+#box4{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPlU1ZjmDtTYorXqiip4hYId_heLT4MJ-1A&s");
+}
+#box5{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbr2RpgfntcBKFVPwtTtVwifVRY7jPXb-TA&s");
+}
+#box6{
+    background-image: url("https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg");
+}
+#box7{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LxpsG1ySTUuksTn77j0xJ73gpM6onIzvJBHq2MyInRAMp-xWTKsI0bIbXARrvxfuiZE&usqp=CAU");
+}
+#box8{
+    background-image: url("https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png");
+}
+#box9{
+    background-image: url("https://c0.klipartz.com/pngpicture/724/306/gratis-png-logotipo-de-c-icono-de-lenguaje-de-programacion-c-letra-c-thumbnail.png");
+}
+#box10{
+    background-image: url("https://as2.ftcdn.net/v2/jpg/02/50/30/59/1000_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg");
+}
+
+
+
+  #timer {
+    font-size: 35px;
+    color: #521b1b;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+  }
+#startButton{
+    height: 45px;
+    width: 120px;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+
